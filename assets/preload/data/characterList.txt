@@ -15,4 +15,5 @@ bf-pixel
 senpai
 senpai-angry
 spirit
-trickymask
+zardy
+phonebreak
