@@ -139,8 +139,8 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
-			case 'trickymask':
-				tex = Paths.getSparrowAtlas('characters/TrickyMask', 'shared');
+			case 'zardy':
+				tex = Paths.getSparrowAtlas('bedwars/Zardy', 'shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'Idle', 24);
 				animation.addByPrefix('singUP', 'Sing Up', 24);
@@ -149,10 +149,26 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Sing Left', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
+				addOffset("singUP", -80, -10);
+				addOffset("singRIGHT", -65, 5);
+				addOffset("singLEFT", 130, 5);
+				addOffset("singDOWN", -2, -26);
+
+				playAnim('idle');
+			case 'phonebreak':
+				tex = Paths.getSparrowAtlas('bedwars/bambiRemake', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -80, -10);
+				addOffset("singRIGHT", -65, 5);
+				addOffset("singLEFT", 130, 5);
+				addOffset("singDOWN", -2, -26);
 
 				playAnim('idle');
 			case 'spooky':
